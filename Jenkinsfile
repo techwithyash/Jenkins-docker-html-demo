@@ -73,13 +73,13 @@ pipeline {
     post {
         // Actions to run if the pipeline succeeds
         success {
-            echo '✅ Pipeline completed successfully!'
-            echo '🌐 Your website is now live at http://localhost'
+            echo ' Pipeline completed successfully!'
+            echo ' Your website is now live at http://localhost'
         }
         
         // Actions to run if the pipeline fails
         failure {
-            echo '❌ Pipeline failed. Please check the logs above for errors.'
+            echo 'Pipeline failed. Please check the logs above for errors.'
         }
     }
 }
