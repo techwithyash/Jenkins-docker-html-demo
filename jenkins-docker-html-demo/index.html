@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jenkins + Docker CI/CD Demo</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 50px;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            max-width: 800px;
+            text-align: center;
+            animation: fadeIn 1s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        h1 {
+            color: #333;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            line-height: 1.3;
+        }
+
+        .version {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 10px 30px;
+            border-radius: 50px;
+            font-size: 1.2em;
+            font-weight: bold;
+            margin: 20px 0;
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+        }
+
+        .description {
+            color: #555;
+            font-size: 1.1em;
+            line-height: 1.8;
+            margin-top: 30px;
+            text-align: left;
+        }
+
+        .highlight {
+            background: #fff3cd;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-weight: 600;
+            color: #856404;
+        }
+
+        .pipeline-steps {
+            margin-top: 30px;
+            text-align: left;
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 4px solid #667eea;
+        }
+
+        .pipeline-steps h3 {
+            color: #667eea;
+            margin-bottom: 15px;
+        }
+
+        .pipeline-steps ol {
+            margin-left: 20px;
+            color: #555;
+            line-height: 2;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 30px 20px;
+            }
+
+            h1 {
+                font-size: 1.8em;
+            }
+
+            .version {
+                font-size: 1em;
+                padding: 8px 20px;
+            }
+
+            .description {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🚀 Hello from Jenkins + Docker CI/CD</h1>
+        
+        <div class="version">Version 1.0</div>
+        
+        <div class="description">
+            <p>
+                This website is automatically deployed using a modern <span class="highlight">CI/CD pipeline</span>. 
+                Every time a developer pushes changes to <span class="highlight">GitHub</span>, 
+                Jenkins automatically detects the commit, builds a new <span class="highlight">Docker image</span>, 
+                stops the old container, and deploys the updated version instantly!
+            </p>
+        </div>
+
+        <div class="pipeline-steps">
+            <h3>🔄 Automated Pipeline Workflow:</h3>
+            <ol>
+                <li>Developer pushes code to GitHub</li>
+                <li>Jenkins detects the new commit</li>
+                <li>Jenkins checks out the latest code</li>
+                <li>Jenkins builds a new Docker image</li>
+                <li>Jenkins stops and removes the old container</li>
+                <li>Jenkins starts a new container with the updated code</li>
+                <li>Changes are live immediately! 🎉</li>
+            </ol>
+        </div>
+    </div>
+</body>
+</html>

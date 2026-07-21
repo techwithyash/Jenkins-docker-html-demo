@@ -1,0 +1,14 @@
+# IDE and Editor Files
+.idea
+.vscode
+
+# Log Files
+*.log
+
+# Build Directories
+target
+node_modules
+
+# OS Generated Files
+.DS_Store
+Thumbs.db
